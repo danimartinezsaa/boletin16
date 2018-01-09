@@ -12,7 +12,8 @@ import es.dani.personal.Personal;
  * @author dani
  */
 public class Academia{
-    private int numReferencia=2018,nota;
+    private static int numReferencia=2018;
+    private int nota;
     private String nombre;
     Personal alum;
 

@@ -5,6 +5,8 @@
  */
 package boletin16;
 
+import es.dani.personal.Personal;
+
 /**
  *
  * @author dani
@@ -15,7 +17,9 @@ public class Boletin16{
      * @param args the command line arguments
      */
     public static void main(String[] args){
-        // TODO code application logic here
+        Personal personal1=new Personal("123345566","dani@dani.es");
+        Academia alumno1=new Academia(9,"Dani",personal1);
+        System.out.println(alumno1.toString());
     }
     
 }
