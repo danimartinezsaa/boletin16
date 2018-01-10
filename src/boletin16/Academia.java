@@ -18,12 +18,14 @@ public class Academia{
     Personal alum;
 
     public Academia(){
+        numReferencia++;
     }
 
     public Academia(int nota, String nombre, Personal alum){
         this.nota=nota;
         this.nombre=nombre;
         this.alum=alum;
+        numReferencia++;
     }
 
     public int getNumReferencia(){

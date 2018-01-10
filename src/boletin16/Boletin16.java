@@ -18,7 +18,9 @@ public class Boletin16{
      */
     public static void main(String[] args){
         Personal personal1=new Personal("123345566","dani@dani.es");
+        Personal personal2=new Personal("123365579","pablo@pablo.es");
         Academia alumno1=new Academia(9,"Dani",personal1);
+        Academia alumno2=new Academia(0,"Pablo",personal2);
         System.out.println(alumno1.toString());
         alumno1.calcularNota();
         System.out.println("La nota final es: "+alumno1.getNota());
