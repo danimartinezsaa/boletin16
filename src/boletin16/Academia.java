@@ -13,7 +13,7 @@ import es.dani.personal.Personal;
  */
 public class Academia{
     private static int numReferencia=2018;
-    private int nota;
+    private float nota;
     private String nombre;
     Personal alum;
 
@@ -34,11 +34,11 @@ public class Academia{
         this.numReferencia=numReferencia;
     }
 
-    public int getNota(){
+    public float getNota(){
         return nota;
     }
 
-    public void setNota(int nota){
+    public void setNota(float nota){
         this.nota=nota;
     }
 
@@ -61,6 +61,14 @@ public class Academia{
     @Override
     public String toString(){
         return "numReferencia: "+numReferencia+", nota: "+nota+", nombre: "+nombre+", alum: "+alum;
+    }
+    
+    public void calcularNota(){
+        Notas n=new Notas();
+        n.calculoEscritas();
+        n.calculoPracticas();
+        n.calculoBoletines();
+        nota=n.notaFinal();
     }
     
 }

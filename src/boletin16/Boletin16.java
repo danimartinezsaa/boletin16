@@ -20,6 +20,8 @@ public class Boletin16{
         Personal personal1=new Personal("123345566","dani@dani.es");
         Academia alumno1=new Academia(9,"Dani",personal1);
         System.out.println(alumno1.toString());
+        alumno1.calcularNota();
+        System.out.println("La nota final es: "+alumno1.getNota());
     }
     
 }
